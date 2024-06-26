@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Dark-Grey: hsl(248, 10%, 15%);
+    --Grey: hsl(251, 9%, 53%);
+    --Almost-White: hsl(252, 11%, 91%);
+    --Very-Dark-Grey: hsl(248, 15%, 11%);
+    --Neon-Green: hsl(127, 100%, 82%);
+    --Red: hsl(0, 91%, 63%);
+    --Orange: hsl(13, 95%, 66%);
+    --Yellow: hsl(42, 91%, 68%);
+}
