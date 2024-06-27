@@ -22,7 +22,58 @@
       <i class="fa-regular fa-copy "></i>
      </button>
     </div>
+    
+    <div class="content">
+      <div class="char-length-data">
+        <p>Character Length</p>
+        <p class="Character-value">0</p>
+      </div>
 
+      <input type="range" name="range" value="0" min="0" max="20" id="range" class="input-range" />
+
+      <div>
+          <label class="instruction-info">
+            <input type="checkbox" id="uppercase"  />
+            <span>Include Uppercase Letters</span>
+          </label>
+          
+          <label class="instruction-info">
+            <input type="checkbox" id="lowercase"  />
+            <span>Include Lowercase Letters</span>
+          </label>
+
+          <label class="instruction-info">
+            <input type="checkbox" id="numbers"  />
+            <span>Include Numbers</span>
+          </label>
+
+          <label class="instruction-info">
+            <input type="checkbox" id="symbols"  />
+            <span>Include Symbols</span>
+          </label>
+      </div>
+
+      <div class="password-status">
+        <p class="strength">STRENGTH</p>
+        <div class="status-progress">
+        <p class="status-name"></p>
+        <div class="status-bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      </div>
+
+      <div class="generate-btn">
+        <button class="button">GENERATE</button>
+        <div class="generate-icon">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+    </div>
    
 
   </div>
