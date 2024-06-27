@@ -11,7 +11,7 @@ const numbersEl = document.getElementById("numbers");
 const symbolsEl = document.getElementById("symbols");
 const generateBtn = document.querySelector(".button");
 const statusNameEl = document.querySelector(".status-name");
-const statusBars = document.querySelectorAll(".status-bars .bar");
+const statusBars = document.querySelectorAll(".bar");
 
 inputRange.addEventListener("input", function () {
   const ratio = ((this.value - this.min) / (this.max - this.min)) * 100;
@@ -63,7 +63,7 @@ generateBtn.addEventListener("click", () => {
 
 const updateStrengthStatus = () => {
   const checkedCount = [uppercaseEl, lowercaseEl, numbersEl, symbolsEl].filter(
-    (el) => el.checked
+    (element) => element.checked
   ).length;
 
   let statusName;
@@ -108,9 +108,18 @@ const updateStrengthStatus = () => {
   });
 };
 
-[uppercaseEl, lowercaseEl, numbersEl, symbolsEl].forEach((el) => {
-  el.addEventListener("change", updateStrengthStatus);
+[uppercaseEl, lowercaseEl, numbersEl, symbolsEl].forEach((element) => {
+  element.addEventListener("change", updateStrengthStatus);
 });
 
-const copyToClipboard = () => {};
+const copyToClipboard = () => {
+  const copy = navigator.clipboard;
+  if (inputEl.value.length > 0) {
+    copy
+      .writeText(inputEl.value)
+      .then(() => alert("Password copied to clipboard"));
+  } else {
+    alert("No password to copy");
+  }
+};
 copyEl.addEventListener("click", copyToClipboard);

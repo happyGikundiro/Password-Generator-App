@@ -79,6 +79,31 @@ font-size: 20px;
     gap: 20px;
     padding-bottom: 15px;
 }
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--Almost-White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="checkbox"]:after{
+    content: "\f00c";
+    font-size: 15px;
+    color: var(--Very-Dark-Grey);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: none;
+}
+input[type="checkbox"]:checked{
+    background-color: var(--Neon-Green);
+    border: none;
+}
+input[type="checkbox"]:checked:after{
+    display: block;
+}
 .password-status{
     background-color: var(--Very-Dark-Grey);
     height: 72px;
@@ -163,4 +188,24 @@ font-size: 20px;
     border: 2px solid var(--Neon-Green);
     background: var(--Very-Dark-Grey);
   }
-  
+
+  @media screen and (max-width: 570px){
+    .container{
+        max-width: 100%;
+        margin: 0 15px;
+    }
+}
+@media screen and (max-width: 445px){
+    .password-input{
+        padding: 0 13px;
+    }
+    .content{
+        padding: 13px;
+    }
+    .status-name{
+        font-size: 16px;
+    }
+    .password-status{
+        padding: 0 10px;
+    }
+}
