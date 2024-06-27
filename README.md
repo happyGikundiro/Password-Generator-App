@@ -12,8 +12,6 @@ Users are be able to:
 
 ### Screenshot
 
-![sreen](file:///C:/Users/User/OneDrive/Pictures/Screenshots/Screenshot%202024-06-27%20124959.png)
-
 <img width="547" alt="Screenshot 2024-06-27 124959" src="https://github.com/happyGikundiro/Password-Generator-App/assets/172483008/3cde5cfe-7744-4161-8d2f-23225b8bf46f">
 
 
