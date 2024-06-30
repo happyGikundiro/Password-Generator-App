@@ -3,7 +3,7 @@
 
 ### In this project
 
-Users are be able to:
+Users are able to:
 
 - Generate a password based on the selected inclusion options
 - Copy the generated password to the computer's clipboard
@@ -22,7 +22,7 @@ Users are be able to:
 
 ### What I learned
 
-How to use class to .........
+While developing this Password Generator App, I've learned to leverage modern JavaScript features such as arrow functions for clearer code, destructuring for simplified data management, using classes to improve organization, while understanding let and const enhanced variable handling and Default settings which made it flexible and efficient in application design.
 
 
 
